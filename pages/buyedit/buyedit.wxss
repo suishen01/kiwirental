@@ -1,0 +1,103 @@
+page {
+  background-color: #f1f1f1;
+}
+
+.box {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+}
+
+.section {
+  padding: 20rpx 40rpx;
+  overflow: hidden;
+  margin-bottom: 2rpx;
+  background-color: #fff;
+}
+
+.section .section__title {
+  float: left;
+  padding: 6rpx 0;
+}
+
+.section .section__title text {
+  color: #a9a9a9;
+}
+
+.section .picker text.hui {
+  display: inline-block;
+  padding-top: 6rpx;
+  color: #a9a9a9;
+}
+
+.section .picker text.hei {
+  display: inline-block;
+  padding-top: 6rpx;
+  color: #010101;
+}
+
+.section .huxing {
+  display: inline-block;
+  width: 50rpx;
+  margin-bottom: -11rpx;
+  text-align: center;
+}
+
+.section textarea {
+  height: 160rpx;
+}
+
+.upimgbox {
+  display: block;
+  margin-top: 10rpx;
+}
+
+.upimgbox image {
+  display: inline-block;
+  width: 116rpx;
+  height: 116rpx;
+  margin-right: 20rpx;
+}
+
+.upimgbox .prebox {
+  display: inline-block;
+  width: 116rpx;
+  height: 116rpx;
+  margin-right: 20rpx;
+  position: relative;
+}
+
+.upimgbox .prebox img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.upimgbox .prebox .close {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: -25rpx;
+  top: -10rpx;
+}
+
+.upbtn {
+  width: 100%;
+  height: 90rpx;
+  background-color: transparent;
+  margin-top: 30rpx;
+}
+
+.upbtn .btn {
+  width: 650rpx;
+  height: 70rpx;
+  border-radius: 70rpx;
+  background-color: #fdd105;
+  color: #010101;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  border: 1rpx solid #fdd105;
+  display: block;
+  margin: 10rpx auto;
+  text-align: center;
+}

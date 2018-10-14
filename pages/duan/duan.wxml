@@ -1,0 +1,59 @@
+<!--底部编辑框-->
+<image wx:if="{{hasUserInfo}}" src='../../assets/images/img1_24.png' class='edit' bindtap='edit'></image>
+
+<!-- 列表 -->
+<scroll-view class="listbox" scroll-y style="width: 100%">
+  <!-- 顶部筛选 -->
+  <view class='top-tab'>
+    <view class='item color1' wx:for="{{tab}}" wx:key="">
+      <picker bindchange="xuan{{index}}" value="{{index}}" range="{{item.xuan}}">
+        <view class="picker">
+          {{item.name}}
+          <image src='../../assets/images/img1_05.png'></image>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class='item-box' wx:for="{{list}}" wx:key="">
+    <view class='item p20' bindtap='more' id="{{item.objectId}}" >
+      <view class='tx'>
+        <image src='{{item.tx}}'></image>
+      </view>
+      <view class='info'>
+        <view class='info1'>
+          <text class='name'>{{item.titt}}</text>
+          <text class='time'>{{item.time}}</text>
+        </view>
+        <view class='titt'>
+          <view class='tip'>{{item.huxing}}</view>
+          <view class='tip'>{{item.zujin}}</view>
+        </view>
+        <view class='sub-text'>
+          {{item.subtitt}}
+        </view>
+        <view class='s-tu'>
+          <view class='tou'></view> 
+          <view class='item' wx:for="{{item.stu}}" wx:key="">
+            <image src='{{item}}'></image>
+          </view>
+        </view>
+        <view class='more'>点击查看图片与详情</view>
+        <view class='t-icon'>
+          <view class='icon-item'>
+            <image src='../../assets/images/img1_14.png'></image> {{item.view}}
+          </view>
+          <view class='icon-item'>
+            <image src='../../assets/images/img1_16.png'></image> {{item.like}}
+          </view>
+          <view class='icon-item'>
+            <image src='../../assets/images/img1_18.png'></image> {{item.comment}}
+          </view>
+        </view>
+
+      </view>
+      
+    </view>
+  </view>
+  <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+  </view>
+</scroll-view>

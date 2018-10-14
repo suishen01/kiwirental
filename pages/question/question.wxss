@@ -1,0 +1,120 @@
+page {
+  background-color: #f1f1f1;
+}
+
+.q-num {
+  text-align: center;
+  font-size: 24rpx;
+  padding: 20rpx 0;
+  color: #010101;
+  font-weight: bold;
+}
+
+.q-num text:first-child {
+  margin-right: 30rpx;
+  color: #6b7886;
+  font-weight: normal;
+}
+
+.item {
+  padding: 20rpx;
+  background-color: #fff;
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+  color: #6b7886;
+}
+
+.item .wen {
+  margin-bottom: 20rpx;
+}
+
+.item .wen.hui {
+  font-weight: bold;
+  color: #010101;
+}
+
+.item .wen .kuai {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  background-color: #9badd3;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 6rpx;
+}
+
+.item .da .kuai {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  background-color: #f8cc1a;
+  color: #010101;
+  font-size: 24rpx;
+  border-radius: 6rpx;
+}
+
+.shuru textarea {
+  width: 100%;
+  height: 120rpx;
+  background-color: #eee;
+  padding: 15rpx 5rpx;
+  margin-top: 15rpx;
+  text-indent: 15rpx;
+}
+
+.shuru .btn {
+  text-align: right;
+  margin-top: 15rpx;
+}
+
+.shuru .btn .text {
+  display: inline-block;
+  font-size: 28rpx;
+  color: #010101;
+  background-color: #f8cc1a;
+  padding: 10rpx 25rpx;
+  border-radius: 6rpx;
+}
+
+.ti {
+  width: 750rpx;
+  height: 100rpx;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.ti view {
+  display: inline-block;
+  width: 130rpx;
+  height: 70rpx;
+  background-color: #f8cc1a;
+  color: #010101;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  border-radius: 6rpx;
+  margin-top: 15rpx;
+  float: left;
+}
+
+.ti input {
+  float: left;
+  display: inline-block;
+  width: 560rpx;
+  height: 70rpx;
+  background-color: #eee;
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  border-radius: 6rpx;
+  margin-top: 15rpx;
+  text-indent: 20rpx;
+}
+
+.bottom{height: 120rpx;width: 100%}

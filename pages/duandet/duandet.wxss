@@ -1,0 +1,260 @@
+page {
+  background-color: #f1f1f1;
+}
+
+swiper {
+  height: 400rpx;
+}
+
+.slide-image {
+  display: block;
+  width: 750rpx;
+  height: 400rpx;
+}
+
+.det-top {
+  position: relative;
+}
+
+.det-top .like {
+  width: 120rpx;
+  height: 46rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  font-size: 22rpx;
+  text-align: center;
+  line-height: 46rpx;
+  border-radius: 10rpx;
+}
+
+.det-top .like.active {
+  background-color: #f8cc1a;
+  color: #fff;
+}
+
+.det-top .like image {
+  display: inline-block;
+  width: 24rpx;
+  height: 24rpx;
+  margin-bottom: -3rpx;
+}
+
+.det-tx {
+  position: relative;
+}
+
+.det-tx .addwx {
+  width: 118rpx;
+  height: 42rpx;
+  background-color: #f8cc1a;
+  color: #010101;
+  text-align: center;
+  line-height: 42rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 35rpx;
+  font-size: 22rpx;
+  border-radius: 6rpx;
+}
+
+.det-tx .box {
+  display: -webkit-flex;
+  -webkit-flex-flow: row;
+  -webkit-align-items: stretch;
+  -webkit-justify-content: space-between;
+  display: -ms-flex;
+  -ms-flex-flow: row wrap;
+  -ms-align-items: stretch;
+  -ms-justify-content: space-between;
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20rpx;
+}
+
+.det-tx .box .tx {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  flex: 1;
+}
+
+.det-tx .box .tx image {
+  display: block;
+  width: 74rpx;
+  height: 74rpx;
+  border-radius: 74rpx;
+}
+
+.det-tx .box .info {
+  -webkit-flex: 6;
+  -moz-flex: 6;
+  flex: 6;
+}
+
+.det-tx .box .info .info1 {
+  overflow: hidden;
+}
+
+.det-tx .box .info .info1 .name {
+  float: left;
+  font-size: 28rpx;
+  color: #010101;
+}
+
+.det-tx .box .info .titt {
+  font-size: 24rpx;
+  color: #6b7886;
+}
+
+.house {
+  background-color: #fff;
+  padding: 20rpx;
+  margin-top: 10rpx;
+}
+
+.house .text {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #010101;
+}
+
+.house .price {
+  text-align: right;
+}
+
+.house .price .tip {
+  display: inline-block;
+  font-size: 30rpx;
+  background-color: #f8cc1a;
+  color: #010101;
+  padding: 10rpx 20rpx;
+  border-radius: 6rpx;
+}
+
+.house .price .tip text {
+  font-size: 22rpx;
+  font-weight: normal;
+}
+
+.det-info {
+  background-color: #fff;
+  margin-top: 10rpx;
+  padding: 20rpx;
+  padding-bottom: 50rpx;
+}
+
+.det-info .titt {
+  font-size: 36rpx;
+  color: #010101;
+  border-bottom: 2rpx solid #f0f0f0;
+  padding-bottom: 20rpx;
+}
+
+.det-info .item {
+  padding: 40rpx 0 0 0;
+  font-size: 28rpx;
+  color: #010101;
+}
+
+.det-info .item text {
+  color: #828282;
+}
+
+.da {
+  width: 400rpx;
+  margin: 20rpx auto;
+}
+
+.da image {
+  width: 130rpx;
+  height: 120rpx;
+  margin-bottom: -25rpx;
+  margin-left: 60rpx;
+}
+
+.da .text {
+  display: inline-block;
+  width: 170rpx;
+  font-size: 30rpx;
+  color: #010101;
+  margin-left: 10rpx;
+}
+
+.guess .titt {
+  text-align: center;
+  font-size: 24rpx;
+  color: #6b7886;
+  height: 60rpx;
+  line-height: 60rpx;
+  position: relative;
+}
+
+.guess .titt::before {
+  content: '';
+  width: 270rpx;
+  height: 2rpx;
+  background-color: #e5e5e5;
+  position: absolute;
+  left: 30rpx;
+  top: 30rpx;
+}
+
+.guess .titt::after {
+  content: '';
+  width: 270rpx;
+  height: 2rpx;
+  background-color: #e5e5e5;
+  position: absolute;
+  right: 30rpx;
+  top: 30rpx;
+}
+
+.tui {
+  padding: 20rpx;
+}
+
+.tui .item {
+  display: inline-block;
+  width: 346rpx;
+  background-color: #fff;
+  font-size: 22rpx;
+  margin-bottom: 20rpx;
+}
+.tui .item:nth-of-type(odd){
+  margin-right: 20rpx;
+}
+.tui .item .tu {
+  position: relative;
+}
+
+.tui .item .tu .price {
+  display: inline-block;
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  background-color: #f8cc1a;
+  color: #010101;
+  padding: 5rpx 10rpx;
+  font-size: 20rpx;
+  border-radius: 6rpx;
+}
+
+.tui .item image {
+  width: 346rpx;
+  height: 134rpx;
+}
+
+.tui .item .info {
+  padding: 20rpx;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+  -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+  -webkit-line-clamp: 2; /** 显示的行数 **/
+  overflow: hidden;
+}

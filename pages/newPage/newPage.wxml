@@ -1,0 +1,46 @@
+<view class="det-top">
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#f8cc1a" bindtap='preview'>
+    <block wx:for="{{good.photo}}" wx:for-index="key" wx:key="" >
+      <swiper-item  id="{{key}}">
+        <image mode="aspectFill" src="{{item}}" class="slide-image" id="{{key}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='like {{liked ? "active":""}}' bindtap='like'>
+    <image src='../../assets/images/like.png'></image> {{like}}
+  </view>
+</view>
+<view class='det-tx'>
+  <view class='box'>
+    <view class='tx'>
+      <image src='{{good.tx}}'></image>
+    </view>
+    <view class='info'>
+      <view class='info1'>
+        <text class='name'>{{good.name}}</text>
+      </view>
+      <view class='titt'>
+        <text>{{}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='house'>
+  <view class='text'>{{good.titt}}</view>
+  <view class='price'>
+    <view class='tip'> {{good.type}}</view>
+    <view class='tip'> {{good.region}}</view>
+    <view class='tip'><text>$</text> {{good.price}}</view>
+  </view>
+</view>
+<view class='det-info'>
+  <view class='titt'>房屋详情</view>
+  <view class='item'>
+    {{good.subtitt}} <text></text>
+  </view>
+</view>
+<view class='da' bindtap='da'>
+  <image src='../../assets/images/da.png'></image> 
+  <view class='text'>点击查看所有问答</view>
+</view>

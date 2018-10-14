@@ -1,0 +1,23 @@
+<view class='q-num'>
+  <text>已答复：{{resd}}</text>
+  <text>未答复：{{res}}</text>
+</view>
+<view class='item' wx:for="{{wen}}" wx:key="" bindtap='select' id="{{item.id}}">
+  <view class='wen {{item.hui ? "":"hui"}}'>
+    <view class='kuai '>问</view> {{item.wen}}
+  </view>
+  <view class='da' wx:if="{{item.hui}}">
+    <view class='kuai'>答</view> {{item.da}}
+  </view>
+  <view class='shuru' wx:if="{{item.shuru}}">
+    <textarea placeholder='请输入您的回答' bindinput='daInput'></textarea>
+    <view class='btn'>
+      <view class='text' bindtap='submitAnswer'>提交答案</view>
+    </view>
+  </view>
+</view>
+<view class='bottom'></view>
+<view class='ti'>
+  <input bindinput='askInput' placeholder='请在这里发起提问' type='text'/>
+  <view bindtap='ask'>提问</view>
+</view>

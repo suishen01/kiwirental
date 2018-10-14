@@ -1,0 +1,159 @@
+page {
+  background-color: #f1f1f1;
+}
+
+.like-top {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  height: 80rpx;
+}
+
+.like-top .box {
+  width: 400rpx;
+  margin: 0 auto;
+}
+
+.like-top .box .item {
+  float: left;
+  width: 200rpx;
+  font-size: 28rpx;
+  color: #6b7886;
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-top: 15rpx;
+  background-color: #eee;
+}
+
+.like-top .box .item:first-child {
+  border-radius: 10rpx 0 0 10rpx;
+}
+
+.like-top .box .item:last-child {
+  border-radius: 0 10rpx 10rpx 0;
+}
+
+.like-top .box .item.active {
+  background-color: #fdd105;
+  color: #010101;
+}
+
+.likebox .item .titt {
+  text-align: center;
+  font-size: 24rpx;
+  color: #6b7886;
+  height: 60rpx;
+  line-height: 60rpx;
+  position: relative;
+}
+
+.likebox .item .titt::before {
+  content: '';
+  width: 300rpx;
+  height: 2rpx;
+  background-color: #e5e5e5;
+  position: absolute;
+  left: 30rpx;
+  top: 30rpx;
+}
+
+.likebox .item .titt::after {
+  content: '';
+  width: 300rpx;
+  height: 2rpx;
+  background-color: #e5e5e5;
+  position: absolute;
+  right: 30rpx;
+  top: 30rpx;
+}
+
+.likebox .li-item {
+  display: -webkit-flex;
+  -webkit-flex-flow: row;
+  -webkit-align-items: stretch;
+  -webkit-justify-content: space-between;
+  display: -ms-flex;
+  -ms-flex-flow: row wrap;
+  -ms-align-items: stretch;
+  -ms-justify-content: space-between;
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20rpx;
+  margin-bottom: 2rpx;
+}
+
+.likebox .li-item .tu {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  flex: 1;
+  position: relative;
+}
+
+.likebox .li-item .tu .num {
+  display: inline-block;
+  padding: 5rpx 15rpx;
+  background-color: #fdd105;
+  color: #010101;
+  position: absolute;
+  right: 5rpx;
+  top: -10rpx;
+  font-size: 24rpx;
+  border-radius: 100%;
+}
+
+.likebox .li-item .tu image {
+  display: block;
+  width: 182rpx;
+  height: 117rpx;
+}
+
+.likebox .li-item .info {
+  -webkit-flex: 2.5;
+  -moz-flex: 2.5;
+  flex: 2.5;
+  position: relative;
+}
+
+.likebox .li-item .info .det {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right:10rpx;
+  bottom: 0;
+}
+.likebox .li-item .info .edit {
+  display: block;
+  width:37rpx;
+  height:37rpx;
+  position: absolute;
+  right:70rpx;
+  bottom: 3rpx;
+}
+
+.likebox .li-item .info .li-titt {
+  font-size: 24rpx;
+  color: #010101;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+  -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+  -webkit-line-clamp: 2; /** 显示的行数 **/
+  overflow: hidden;
+  line-height: 35rpx;
+  font-weight: bold;
+}
+
+.likebox .li-item .info .tip {
+  display: inline-block;
+  font-size: 20rpx;
+  color: #010101;
+  background-color: #fdd519;
+  padding: 5rpx 10rpx;
+  border-radius: 4rpx;
+  margin-right: 10rpx;
+}

@@ -1,0 +1,60 @@
+<view class='like-top'>
+  <view class="box">
+    <view class="item {{select1? 'active':''}}" bindtap='select1'>我的收藏</view>
+    <view class="item {{select2? 'active':''}}" bindtap='select2'>我的发布</view>
+  </view>
+</view>
+<!-- 我的关注 -->
+<view class='likebox'>
+  <view class='item'>
+    <view class='titt'>租房</view>
+    <view class='li-item' wx:for="{{rents}}" wx:key="" wx:for-item="li">
+      <view class='tu'>
+        <view class='num' wx:if="{{li.num}}">{{li.num}}</view>
+        <image src='{{li.tu}}'></image>
+      </view>
+      <view class='info' id="{{li.objectId}}">
+        <view class='li-titt' bindtap='more'  id="zu{{li.objectId}}">{{li.lititt}}</view>
+        <view class='tipbox'>
+          <view class='tip' wx:for="{{li.tip}}" wx:key="" wx:for-item="tip">{{tip}}</view>
+        </view>
+        <image src='../../assets/images/det.png' class='det' wx-if="{{showdet}}"  bindtap='delet' id="zu{{li.objectId}}"></image>
+        <image src='../../assets/images/edit.png' class='edit' wx-if="{{select2}}"  bindtap='edit' id="zu{{li.objectId}}"></image>
+      </view>
+    </view>
+  </view>
+  <view class='item'>
+    <view class='titt'>卖房</view>
+    <view class='li-item' wx:for="{{buys}}" wx:key="" wx:for-item="li">
+      <view class='tu'>
+        <view class='num' wx:if="{{li.num}}">{{li.num}}</view>
+        <image src='{{li.tu}}'></image>
+      </view>
+      <view class='info' id="{{li.objectId}}">
+        <view class='li-titt' bindtap='more'  id="bu{{li.objectId}}">{{li.lititt}}</view>
+        <view class='tipbox'>
+          <view class='tip' wx:for="{{li.tip}}" wx:key="" wx:for-item="tip">{{tip}}</view>
+        </view>
+        <image src='../../assets/images/det.png' class='det' wx-if="{{showdet}}"  bindtap='delet' id="bu{{li.objectId}}"></image>
+        <image src='../../assets/images/edit.png' class='edit' wx-if="{{select2}}"  bindtap='edit' id="bu{{li.objectId}}"></image>
+      </view>
+    </view>
+  </view>
+  <view class='item'>
+    <view class='titt'>短租</view>
+    <view class='li-item' wx:for="{{duans}}" wx:key="" wx:for-item="li">
+      <view class='tu'>
+        <view class='num' wx:if="{{li.num}}">{{li.num}}</view>
+        <image src='{{li.tu}}'></image>
+      </view>
+      <view class='info' id="{{li.objectId}}">
+        <view class='li-titt' bindtap='more'  id="du{{li.objectId}}">{{li.lititt}}</view>
+        <view class='tipbox'>
+          <view class='tip' wx:for="{{li.tip}}" wx:key="" wx:for-item="tip">{{tip}}</view>
+        </view>
+        <image src='../../assets/images/det.png' class='det' wx-if="{{showdet}}"  bindtap='delet' id="du{{li.objectId}}"></image>
+        <image src='../../assets/images/edit.png' class='edit' wx-if="{{select2}}"  bindtap='edit' id="du{{li.objectId}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

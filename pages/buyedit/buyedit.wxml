@@ -1,0 +1,71 @@
+<view class='box'>
+  <view class="section">
+    <view class="section__title">类型：</view>
+    <picker bindchange="typetap" value="{{index1}}" range="{{type}}">
+      <view class="picker">
+        <text class='hui' wx:if="{{!typez}}">请点击选择租房类型</text>
+        <text class='hei' wx:if="{{typez}}">{{typez}}</text>
+      </view>
+    </picker>
+  </view>
+  <view class="section">
+    <view class="section__title">位置：</view>
+    <picker bindchange="localtap" value="{{index2}}" range="{{local}}">
+      <view class="picker">
+        <text class='hui' wx:if="{{!localz}}">请点击选择位置</text>
+        <text class='hei' wx:if="{{localz}}">{{localz}}</text>
+      </view>
+    </picker>
+  </view>
+    <view class="section">
+    <view class="section__title">区域：</view>
+    <picker bindchange="postap" value="{{index2}}" range="{{pos}}">
+      <view class="picker">
+        <text class='hui' wx:if="{{!posz}}">请点击选择租房区域</text>
+        <text class='hei' wx:if="{{posz}}">{{posz}}</text>
+      </view>
+    </picker>
+  </view>
+    <view class="section">
+    <view class="section__title">交易方式：</view>
+    <picker bindchange="methodtap" value="{{index2}}" range="{{method}}">
+      <view class="picker">
+        <text class='hui' wx:if="{{!methodz}}">请点击选择交易方式</text>
+        <text class='hei' wx:if="{{methodz}}">{{methodz}}</text>
+      </view>
+    </picker>
+  </view>
+  <view class="section">
+    <view class="section__title">价格：$</view>
+    <input type="number" placeholder="以万为单位, 如价格50万就填写50" placeholder-style="color:#a9a9a9" value="{{zujin}}" bindinput='zujinInput' />
+  </view>
+  <view class="section">
+    <view class="section__title">填写户型：</view>
+    <input type="number" class='huxing' placeholder="0" placeholder-style="color:#a9a9a9" bindinput='huxingInput1' /> 室
+    <input type="number" class='huxing' placeholder="0" placeholder-style="color:#a9a9a9" bindinput='huxingInput2' /> 厅
+    <input type="number" class='huxing' placeholder="0" placeholder-style="color:#a9a9a9" bindinput='huxingInput3' /> 卫
+    <input type="number" class='huxing' placeholder="0" placeholder-style="color:#a9a9a9" bindinput='huxingInput4' /> 车位
+  </view>
+  <view class="section">
+    <view class="section__title">标题：</view>
+    <input type="text" placeholder="请填写标题，不要超过50字" value="{{tittz}}" placeholder-style="color:#a9a9a9" bindblur='titleInput'  />
+  </view>
+  <view class="section">
+    <view class="section__title" style='float:none'>介绍：</view>
+    <textarea placeholder="请填写介绍" maxlength="-1" value="{{subz}}" placeholder-style="color:#a9a9a9" bindblur='desInput'  />
+  </view>
+  <view class="section">
+    <view class="section__title" style='float:none'>上传照片：<text>(最多上传9张)</text></view>
+    <view class='upimgbox'>
+      <view class='prebox' wx-if="{{url}}"  wx:for="{{url}}" data-index="{{index}}"  wx:key="unique" bindtap='closeUploadImg'>
+        <image src="{{item}}" mode="aspectFill"></image>
+        <image src='../../assets/images/close.png' class='close'></image>
+      </view>
+      <image wx-if="{{imgflag}}" src='../../assets/images/photo_03.png' class='btn' bindtap="upimg"></image>
+    </view>
+  </view>
+</view>
+<!-- 上传按钮 -->
+ <view class='upbtn' wx-if="{{upflag}}" bindtap='up'>
+  <view class='btn'>发布</view>
+</view> 

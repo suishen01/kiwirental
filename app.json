@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/det/det",
+    "pages/buy/buy",
+    "pages/duan/duan",
+    "pages/like/like",
+    "pages/zuedit/zuedit",
+    "pages/buyedit/buyedit",
+    "pages/duanedit/duanedit",
+    "pages/question/question",
+    "pages/buydet/buydet",
+    "pages/duandet/duandet"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fdd105",
+    "navigationBarTitleText": "奇异租房",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor":"#fff",
+    "color":"#9fb6d8",
+    "selectedColor":"#010101",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"assets/images/icon1.png",
+        "selectedIconPath": "assets/images/icon12.png",
+        "text": "租房"
+      },
+      {
+        "pagePath": "pages/buy/buy",
+        "iconPath": "assets/images/icon2.png",
+        "selectedIconPath": "assets/images/icon22.png",
+        "text": "买房"
+      },
+      {
+        "pagePath": "pages/duan/duan",
+        "iconPath": "assets/images/icon3.png",
+        "selectedIconPath": "assets/images/icon32.png",
+        "text": "短租民宿"
+      },
+      {
+        "pagePath": "pages/like/like",
+        "iconPath": "assets/images/icon4.png",
+        "selectedIconPath": "assets/images/icon42.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}
